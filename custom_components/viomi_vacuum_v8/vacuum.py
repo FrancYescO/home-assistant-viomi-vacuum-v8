@@ -501,3 +501,4 @@ class ViomiVacuumEntity(StateVacuumEntity):
         self._last_clean_point = point
         await self._try_command("Unable to clean point: %s", self._vacuum.raw_command, 'set_uploadmap', [0]) \
             and await self._try_command("Unable to clean point: %s", self._vacuum.raw_command, 'set_pointclean', [1, x, y])
+ 
